@@ -1,0 +1,579 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 12 2024 10:58:21[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e2b0h (189104) map[0m
+[0;32mI (170) esp_image: segment 1: paddr=0003e2d8 vaddr=3ffb0000 size=01d40h (  7488) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=afb68h (719720) map[0m
+[0;32mI (422) esp_image: segment 3: paddr=000efb90 vaddr=3ffb1d40 size=020d4h (  8404) load[0m
+[0;32mI (425) esp_image: segment 4: paddr=000f1c6c vaddr=40080000 size=16a70h ( 92784) load[0m
+[0;32mI (475) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (475) boot: Disabling RNG early entropy source...[0m
+[0;32mI (487) cpu_start: Multicore app[0m
+[0;32mI (496) cpu_start: Pro cpu start user code[0m
+[0;32mI (496) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (496) cpu_start: Application information:[0m
+[0;32mI (499) cpu_start: Project name:     mqtt_beebotte[0m
+[0;32mI (504) cpu_start: App version:      f32f121-dirty[0m
+[0;32mI (510) cpu_start: Compile time:     Jun 12 2024 10:58:11[0m
+[0;32mI (516) cpu_start: ELF file SHA256:  233d38d98...[0m
+[0;32mI (521) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (527) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (531) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (536) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (541) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (548) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (554) heap_init: At 3FFB86C8 len 00027938 (158 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (567) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (573) heap_init: At 40096A70 len 00009590 (37 KiB): IRAM[0m
+[0;32mI (581) spi_flash: detected chip: generic[0m
+[0;32mI (584) spi_flash: flash io: dio[0m
+[0;33mW (588) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (597) main_task: Started on CPU0[0m
+[0;32mI (601) main_task: Calling app_main()[0m
+I (643) wifi:wifi driver task: 3ffc05f4, prio:23, stack:6656, core=0
+I (663) wifi:wifi firmware version: 3e0076f
+I (663) wifi:wifi certification version: v7.0
+I (663) wifi:config NVS flash: enabled
+I (663) wifi:config nano formating: disabled
+I (668) wifi:Init data frame dynamic rx buffer num: 32
+I (672) wifi:Init static rx mgmt buffer num: 5
+I (676) wifi:Init management short buffer num: 32
+I (681) wifi:Init dynamic tx buffer num: 32
+I (685) wifi:Init static rx buffer size: 1600
+I (689) wifi:Init static rx buffer num: 10
+I (693) wifi:Init dynamic rx buffer num: 32
+[0;32mI (698) wifi_init: rx ba win: 6[0m
+[0;32mI (700) wifi_init: tcpip mbox: 32[0m
+[0;32mI (704) wifi_init: udp mbox: 6[0m
+[0;32mI (708) wifi_init: tcp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp tx win: 5760[0m
+[0;32mI (716) wifi_init: tcp rx win: 5760[0m
+[0;32mI (720) wifi_init: tcp mss: 1440[0m
+[0;32mI (724) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (729) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (733) azure: Setting WiFi configuration SSID Orange...[0m
+[0;32mI (741) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (826) wifi:mode : sta (7c:87:ce:2d:7c:60)
+I (827) wifi:enable tsf
+I (2096) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1
+I (2097) wifi:state: init -> auth (b0)
+I (2103) wifi:state: auth -> assoc (0)
+I (2112) wifi:state: assoc -> run (10)
+W (2205) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (2231) wifi:connected with Orange, aid = 1, channel 9, BW20, bssid = 5c:64:8e:83:ea:f8
+I (2232) wifi:security: WPA2-PSK, phy: bgn, rssi: -83
+I (2233) wifi:pm start, type: 1
+
+I (2236) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2249) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (2273) wifi:<ba-add>idx:0 (ifx:0, 5c:64:8e:83:ea:f8), tid:0, ssn:2, winSize:64
+[0;32mI (3249) esp_netif_handlers: sta ip: 192.168.1.59, mask: 255.255.255.0, gw: 192.168.1.1[0m
+WiFi connected!
+Initializing SNTP
+ESP platform sntp inited!
+Time is not set yet. Connecting to WiFi and getting time over NTP. timeinfo.tm_year:70
+Waiting for system time to be set... tm_year:0[times:1]
+I (5118) wifi:<ba-clr>idx:0, tid:0, ssn:2, winSize:64
+[0;32mI (6258) platform: The current date/time is: Wed Jun 12 11:05:25 2024[0m
+Creating IoTHub Device handle
+Waiting for message to be sent to device (will quit after 1 messages)
+[0;32mI (8269) main_task: Returned from app_main()[0m
+-> 11:05:30 CONNECT | VER: 4 | KEEPALIVE: 240 | FLAGS: 192 | USERNAME: evcss.azure-devices.net/evcs/?api-version=2020-09-30&DeviceClientType=iothubclient%2f1.13.0%20(native%3b%20freertos%3b%20esp%20platform) | PWD: XXXX | CLEAN: 0
+<- 11:05:31 CONNACK | SESSION_PRESENT: true | RETURN_CODE: 0x0
+<- 11:05:31 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/devicebound/%24.mid=My%20Message%20ID&%24.to=%2Fdevices%2Fevcs%2Fmessages%2Fdevicebound&iothub-ack=full | PACKET_ID: 211 | PAYLOAD_LEN: 43
+Received Binary message
+Message ID: My Message ID
+ Correlation ID: <unavailable>
+ Data: <<<[{"start":1,"balance":10,"chargingRate":2}]>>> & Size=43
+Balance: 10.000000
+CP value : 1.30V
+i : 1
+-> 11:05:31 PUBACK | PACKET_ID: 211
+-> 11:05:32 SUBSCRIBE | PACKET_ID: 2 | TOPIC_NAME: devices/evcs/messages/devicebound/# | QOS: 1
+<- 11:05:32 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/deicebound/%24.mid=My%20Message%20ID&%24.to=%2Fdevices%2Fevcs%2Fmessges%2Fdevicebound&iothub-ack=full | PACKET_ID: 212 | PAYLOAD_LE: 42
+Received Binary message
+Message ID: My Message ID
+ Correlation ID: <unavailable>
+ Data: <<<[{"start":0,"balance":0,"chargingRate":0}]>>> & Size=42
+Charging session ended
+-> 11:05:32 PUBACK | PACKET_ID: 212
+readValue:43
+adc_voltage:0.034644
+CP_voltage: 0.069287
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 1
+Energy Consumed: 0.001222 kWh
+totalenergy: 0.001222
+Remaining balance: 9.89
+msg: {"status":1,"rfid":0, "station_id":6 ,"web":1}
+Sending message  to IoTHub
+<- 11:05:33 SUBACK | PACKET_ID: 2 | RETURN_CODE: 1
+msg: {"status":0,"energy":0.001222,"Balance":9.890000,"rfid":0,"station_id":6}
+Sending message  to IoTHub
+-> 11:05:35 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 3 | PAYLOAD_LEN: 46
+-> 11:05:35 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 4 | PAYLOAD_LEN: 73
+<- 11:05:36 PUBACK | PACKET_ID: 3
+<- 11:05:36 PUBACK | PACKET_ID: 4
+<- 11:05:44 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/devicebound/%24.mid=My%20Message%20ID&%24.to=%2Fdevices%2Fevcs%2Fmessages%2Fdevicebound&iothub-ack=full | PACKET_ID: 213 | PAYLOAD_LEN: 45
+Received Binary message
+Message ID: My Message ID
+ Correlation ID: <unavailable>
+ Data: <<<[{"start":1,"balance":9.89,"chargingRate":1}]>>> & Size=45
+Balance: 9.890000
+CP value : 1.30V
+i : 1
+-> 11:05:44 PUBACK | PACKET_ID: 213
+readValue:26
+adc_voltage:0.020947
+CP_voltage: 0.041895
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 1
+Energy Consumed: 0.001222 kWh
+totalenergy: 0.001222
+Remaining balance: 9.78
+msg: {"status":1,"rfid":0, "station_id":6 ,"web":1}
+Sending message  to IoTHub
+-> 11:05:46 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 5 | PAYLOAD_LEN: 46
+CP value : 1.30V
+i : 2
+<- 11:05:47 PUBACK | PACKET_ID: 5
+readValue:32
+adc_voltage:0.025781
+CP_voltage: 0.051562
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 2
+Energy Consumed: 0.002444 kWh
+totalenergy: 0.003667
+Remaining balance: 9.56
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.002444, "balance":9.560000}
+Sending message  to IoTHub
+-> 11:05:49 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 6 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 3
+<- 11:05:50 PUBACK | PACKET_ID: 6
+readValue:31
+adc_voltage:0.024976
+CP_voltage: 0.049951
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 3
+Energy Consumed: 0.003667 kWh
+totalenergy: 0.007333
+Remaining balance: 9.23
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.003667, "balance":9.230000}
+Sending message  to IoTHub
+-> 11:05:51 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 7 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 4
+<- 11:05:52 PUBACK | PACKET_ID: 7
+readValue:34
+adc_voltage:0.027393
+CP_voltage: 0.054785
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 4
+Energy Consumed: 0.004889 kWh
+totalenergy: 0.012222
+Remaining balance: 8.79
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.004889, "balance":8.790000}
+Sending message  to IoTHub
+-> 11:05:54 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 8 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 5
+<- 11:05:55 PUBACK | PACKET_ID: 8
+readValue:29
+adc_voltage:0.023364
+CP_voltage: 0.046729
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 5
+Energy Consumed: 0.006111 kWh
+totalenergy: 0.018333
+Remaining balance: 8.24
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.006111, "balance":8.240000}
+Sending message  to IoTHub
+-> 11:05:56 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 9 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 6
+<- 11:05:57 PUBACK | PACKET_ID: 9
+readValue:25
+adc_voltage:0.020142
+CP_voltage: 0.040283
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 6
+Energy Consumed: 0.007333 kWh
+totalenergy: 0.025667
+Remaining balance: 7.58
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.007333, "balance":7.580000}
+Sending message  to IoTHub
+-> 11:05:59 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 10 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 7
+readValue:23
+adc_voltage:0.018530
+CP_voltage: 0.037061
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 7
+Energy Consumed: 0.008556 kWh
+totalenergy: 0.034222
+Remaining balance: 6.81
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.008556, "balance":6.810000}
+Sending message  to IoTHub
+-> 11:06:01 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 11 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 8
+<- 11:06:03 PUBACK | PACKET_ID: 10
+<- 11:06:03 PUBACK | PACKET_ID: 11
+readValue:22
+adc_voltage:0.017725
+CP_voltage: 0.035449
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 8
+Energy Consumed: 0.009778 kWh
+totalenergy: 0.044000
+Remaining balance: 5.93
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.009778, "balance":5.930000}
+Sending message  to IoTHub
+-> 11:06:04 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 12 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 9
+<- 11:06:05 PUBACK | PACKET_ID: 12
+readValue:25
+adc_voltage:0.020142
+CP_voltage: 0.040283
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 9
+Energy Consumed: 0.011000 kWh
+totalenergy: 0.055000
+Remaining balance: 4.94
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.011000, "balance":4.940000}
+Sending message  to IoTHub
+-> 11:06:06 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 13 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 10
+<- 11:06:07 PUBACK | PACKET_ID: 13
+readValue:23
+adc_voltage:0.018530
+CP_voltage: 0.037061
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 10
+Energy Consumed: 0.012222 kWh
+totalenergy: 0.067222
+Remaining balance: 3.84
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.012222, "balance":3.840000}
+Sending message  to IoTHub
+-> 11:06:09 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 14 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 11
+readValue:32
+adc_voltage:0.025781
+CP_voltage: 0.051562
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 11
+Energy Consumed: 0.013444 kWh
+totalenergy: 0.080667
+Remaining balance: 2.63
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.013444, "balance":2.630000}
+Sending message  to IoTHub
+-> 11:06:11 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 15 | PAYLOAD_LEN: 80
+<- 11:06:11 PUBACK | PACKET_ID: 14
+CP value : 1.30V
+i : 12
+<- 11:06:12 PUBACK | PACKET_ID: 15
+readValue:23
+adc_voltage:0.018530
+CP_voltage: 0.037061
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 12
+Energy Consumed: 0.014667 kWh
+totalenergy: 0.095333
+Remaining balance: 1.31
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.014667, "balance":1.310000}
+Sending message  to IoTHub
+-> 11:06:14 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 16 | PAYLOAD_LEN: 80
+<- 11:06:14 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/devicebound/%24.mid=My%20Message%20ID&%24.to=%2Fdevices%2Fevcs%2Fmessages%2Fdevicebound&iothub-ack=full | PACKET_ID: 214 | PAYLOAD_LEN: 42CP value : 1.30V
+
+i : 13
+Received Binary message
+Message ID: My Message ID
+ Correlation ID: <unavailable>
+ Data: <<<[{"start":0,"balance":0,"chargingRate":0}]>>> & Size=42
+Charging session ended
+-> 11:06:14 PUBACK | PACKET_ID: 214
+<- 11:06:15 PUBACK | PACKET_ID: 16
+readValue:26
+adc_voltage:0.020947
+CP_voltage: 0.041895
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 13
+Energy Consumed: 0.015889 kWh
+totalenergy: 0.111222
+Remaining balance: 0.00
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.015889, "balance":0.000000}
+Sending message  to IoTHub
+-> 11:06:16 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 17 | PAYLOAD_LEN: 80
+msg: {"status":0,"energy":0.111222,"Balance":0.000000,"rfid":0,"station_id":6}
+Sending message  to IoTHub
+-> 11:06:17 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 18 | PAYLOAD_LEN: 73
+<- 11:06:18 PUBACK | PACKET_ID: 17
+<- 11:06:18 PUBACK | PACKET_ID: 18
+<- 11:08:48 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/devicebound/%24.mid=My%20Message%20ID&%24.to=%2Fdevices%2Fevcs%2Fmessages%2Fdevicebound&iothub-ack=full | PACKET_ID: 215 | PAYLOAD_LEN: 43
+Received Binary message
+Message ID: My Message ID
+ Correlation ID: <unavailable>
+ Data: <<<[{"start":1,"balance":10,"chargingRate":2}]>>> & Size=43
+Balance: 10.000000
+CP value : 1.30V
+i : 1
+-> 11:08:49 PUBACK | PACKET_ID: 215
+readValue:30
+adc_voltage:0.024170
+CP_voltage: 0.048340
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 1
+Energy Consumed: 0.001222 kWh
+totalenergy: 0.001222
+Remaining balance: 9.89
+msg: {"status":1,"rfid":0, "station_id":6 ,"web":1}
+Sending message  to IoTHub
+-> 11:08:51 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 19 | PAYLOAD_LEN: 46
+CP value : 1.30V
+i : 2
+<- 11:08:52 PUBACK | PACKET_ID: 19
+readValue:31
+adc_voltage:0.024976
+CP_voltage: 0.049951
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 2
+Energy Consumed: 0.002444 kWh
+totalenergy: 0.003667
+Remaining balance: 9.67
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.002444, "balance":9.670000}
+Sending message  to IoTHub
+-> 11:08:54 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 20 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 3
+<- 11:08:55 PUBACK | PACKET_ID: 20
+readValue:24
+adc_voltage:0.019336
+CP_voltage: 0.038672
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 3
+Energy Consumed: 0.003667 kWh
+totalenergy: 0.007333
+Remaining balance: 9.34
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.003667, "balance":9.340000}
+Sending message  to IoTHub
+-> 11:08:56 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 21 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 4
+<- 11:08:57 PUBACK | PACKET_ID: 21
+readValue:32
+adc_voltage:0.025781
+CP_voltage: 0.051562
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 4
+Energy Consumed: 0.004889 kWh
+totalenergy: 0.012222
+Remaining balance: 8.90
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.004889, "balance":8.900000}
+Sending message  to IoTHub
+-> 11:08:59 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 22 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 5
+<- 11:09:00 PUBACK | PACKET_ID: 22
+readValue:23
+adc_voltage:0.018530
+CP_voltage: 0.037061
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 5
+Energy Consumed: 0.006111 kWh
+totalenergy: 0.018333
+Remaining balance: 8.35
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.006111, "balance":8.350000}
+Sending message  to IoTHub
+-> 11:09:01 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 23 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 6
+<- 11:09:02 PUBACK | PACKET_ID: 23
+readValue:21
+adc_voltage:0.016919
+CP_voltage: 0.033838
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 6
+Energy Consumed: 0.007333 kWh
+totalenergy: 0.025667
+Remaining balance: 7.69
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.007333, "balance":7.690000}
+Sending message  to IoTHub
+-> 11:09:04 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 24 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 7
+<- 11:09:05 PUBACK | PACKET_ID: 24
+readValue:30
+adc_voltage:0.024170
+CP_voltage: 0.048340
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 7
+Energy Consumed: 0.008556 kWh
+totalenergy: 0.034222
+Remaining balance: 6.92
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.008556, "balance":6.920000}
+Sending message  to IoTHub
+-> 11:09:06 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 25 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 8
+<- 11:09:07 PUBACK | PACKET_ID: 25
+readValue:23
+adc_voltage:0.018530
+CP_voltage: 0.037061
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 8
+Energy Consumed: 0.009778 kWh
+totalenergy: 0.044000
+Remaining balance: 6.04
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.009778, "balance":6.040000}
+Sending message  to IoTHub
+-> 11:09:09 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 26 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 9
+<- 11:09:10 PUBACK | PACKET_ID: 26
+readValue:30
+adc_voltage:0.024170
+CP_voltage: 0.048340
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 9
+Energy Consumed: 0.011000 kWh
+totalenergy: 0.055000
+Remaining balance: 5.05
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.011000, "balance":5.050000}
+Sending message  to IoTHub
+-> 11:09:11 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 27 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 10
+<- 11:09:12 PUBACK | PACKET_ID: 27
+readValue:19
+adc_voltage:0.015308
+CP_voltage: 0.030615
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 10
+Energy Consumed: 0.012222 kWh
+totalenergy: 0.067222
+Remaining balance: 3.95
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.012222, "balance":3.950000}
+Sending message  to IoTHub
+-> 11:09:14 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 28 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 11
+<- 11:09:15 PUBACK | PACKET_ID: 28
+readValue:27
+adc_voltage:0.021753
+CP_voltage: 0.043506
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 11
+Energy Consumed: 0.013444 kWh
+totalenergy: 0.080667
+Remaining balance: 2.74
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.013444, "balance":2.740000}
+Sending message  to IoTHub
+-> 11:09:16 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 29 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 12
+<- 11:09:17 PUBACK | PACKET_ID: 29
+readValue:22
+adc_voltage:0.017725
+CP_voltage: 0.035449
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 12
+Energy Consumed: 0.014667 kWh
+totalenergy: 0.095333
+Remaining balance: 1.42
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.014667, "balance":1.420000}
+Sending message  to IoTHub
+-> 11:09:19 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 30 | PAYLOAD_LEN: 80
+CP value : 1.30V
+i : 13
+<- 11:09:20 PUBACK | PACKET_ID: 30
+readValue:22
+adc_voltage:0.017725
+CP_voltage: 0.035449
+Current : 20.00A
+Voltage : 220.00V
+time_seconds: 13
+Energy Consumed: 0.015889 kWh
+totalenergy: 0.111222
+Remaining balance: 0.00
+msg: {"Voltage":221.000000,"Current":21.000000,"energy":0.015889, "balance":0.000000}
+Sending message  to IoTHub
+-> 11:09:21 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 31 | PAYLOAD_LEN: 80
+msg: {"status":0,"energy":0.111222,"Balance":0.000000,"rfid":0,"station_id":6}
+Sending message  to IoTHub
+-> 11:09:22 PUBLISH | IS_DUP: false | RETAIN: 0 | QOS: DELIVER_AT_LEAST_ONCE | TOPIC_NAME: devices/evcs/messages/events/property_key=property_value | PACKET_ID: 32 | PAYLOAD_LEN: 73
+<- 11:09:22 PUBACK | PACKET_ID: 31
+<- 11:09:23 PUBACK | PACKET_ID: 32
+-> 12:29:52 PINGREQ
+<- 12:29:53 PINGRESP
+-> 12:33:52 PINGREQ
+<- 12:33:53 PINGRESP
+-> 12:37:52 PINGREQ
+<- 12:37:53 PINGRESP
+-> 12:41:32 DISCONNECT
+The device client has been disconnected
+-> 12:41:37 CONNECT | VER: 4 | KEEPALIVE: 240 | FLAGS: 192 | USERNAME: evcss.azure-devices.net/evcs/?api-version=2020-09-30&DeviceClientType=iothubclient%2f1.13.0%20(native%3b%20freertos%3b%20esp%20platform) | PWD: XXXX | CLEAN: 0
+<- 12:41:38 CONNACK | SESSION_PRESENT: true | RETURN_CODE: 0x0
+The device client is connected to iothub
+-> 12:41:39 SUBSCRIBE | PACKET_ID: 198 | TOPIC_NAME: devices/evcs/messages/devicebound/# | QOS: 1
+<- 12:41:40 SUBACK | PACKET_ID: 198 | RETURN_CODE: 1
+-> 12:45:39 PINGREQ
+<- 12:45:40 PINGRESP
+-> 12:49:39 PINGREQ
+<- 12:49:40 PINGRESP
+-> 12:53:39 PINGREQ
+<- 12:53:41 PINGRESP

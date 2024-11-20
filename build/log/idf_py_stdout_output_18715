@@ -1,0 +1,111 @@
+[1/223] Linking C static library esp-idf/mqtt/libmqtt.a
+[2/223] Linking C static library esp-idf/spiffs/libspiffs.a
+[3/223] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[4/223] Performing build step for 'bootloader'
+[1/1] cd /Users/souhir/CODES/EVCS_Firmware/build/bootloader/esp-idf/esptool_py && /Users/souhir/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/souhir/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/souhir/CODES/EVCS_Firmware/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[5/223] No install step for 'bootloader'
+[6/223] Completed 'bootloader'
+[7/223] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/certs/certs.c.obj
+[8/223] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/pal/freertos/threadapi.c.obj
+[9/223] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/sensors.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/sensors.c.obj 
+/Users/souhir/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.2.2-dirty\" -DLV_CONF_INCLUDE_SIMPLE -DLV_LVGL_H_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/Users/souhir/CODES/EVCS_Firmware/build/config -I/Users/souhir/CODES/EVCS_Firmware/main -I/Users/souhir/esp-idf-v5.2.2/components/newlib/platform_include -I/Users/souhir/esp-idf-v5.2.2/components/freertos/config/include -I/Users/souhir/esp-idf-v5.2.2/components/freertos/config/include/freertos -I/Users/souhir/esp-idf-v5.2.2/components/freertos/config/xtensa/include -I/Users/souhir/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/include -I/Users/souhir/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/souhir/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/Users/souhir/esp-idf-v5.2.2/components/freertos/esp_additions/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_hw_support/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_hw_support/include/soc -I/Users/souhir/esp-idf-v5.2.2/components/esp_hw_support/include/soc/esp32 -I/Users/souhir/esp-idf-v5.2.2/components/esp_hw_support/port/esp32/. -I/Users/souhir/esp-idf-v5.2.2/components/heap/include -I/Users/souhir/esp-idf-v5.2.2/components/log/include -I/Users/souhir/esp-idf-v5.2.2/components/soc/include -I/Users/souhir/esp-idf-v5.2.2/components/soc/esp32 -I/Users/souhir/esp-idf-v5.2.2/components/soc/esp32/include -I/Users/souhir/esp-idf-v5.2.2/components/hal/platform_port/include -I/Users/souhir/esp-idf-v5.2.2/components/hal/esp32/include -I/Users/souhir/esp-idf-v5.2.2/components/hal/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_rom/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_rom/include/esp32 -I/Users/souhir/esp-idf-v5.2.2/components/esp_rom/esp32 -I/Users/souhir/esp-idf-v5.2.2/components/esp_common/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_system/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_system/port/soc -I/Users/souhir/esp-idf-v5.2.2/components/esp_system/port/include/private -I/Users/souhir/esp-idf-v5.2.2/components/xtensa/esp32/include -I/Users/souhir/esp-idf-v5.2.2/components/xtensa/include -I/Users/souhir/esp-idf-v5.2.2/components/xtensa/deprecated_include -I/Users/souhir/esp-idf-v5.2.2/components/lwip/include -I/Users/souhir/esp-idf-v5.2.2/components/lwip/include/apps -I/Users/souhir/esp-idf-v5.2.2/components/lwip/include/apps/sntp -I/Users/souhir/esp-idf-v5.2.2/components/lwip/lwip/src/include -I/Users/souhir/esp-idf-v5.2.2/components/lwip/port/include -I/Users/souhir/esp-idf-v5.2.2/components/lwip/port/freertos/include -I/Users/souhir/esp-idf-v5.2.2/components/lwip/port/esp32xx/include -I/Users/souhir/esp-idf-v5.2.2/components/lwip/port/esp32xx/include/arch -I/Users/souhir/esp-idf-v5.2.2/components/lwip/port/esp32xx/include/sys -I/Users/souhir/esp-idf-v5.2.2/components/esp_ringbuf/include -I/Users/souhir/esp-idf-v5.2.2/components/efuse/include -I/Users/souhir/esp-idf-v5.2.2/components/efuse/esp32/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_mm/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/deprecated -I/Users/souhir/esp-idf-v5.2.2/components/driver/analog_comparator/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/dac/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/gpio/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/gptimer/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/i2c/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/i2s/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/ledc/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/mcpwm/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/parlio/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/pcnt/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/rmt/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/sdio_slave/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/sdmmc/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/sigma_delta/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/spi/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/temperature_sensor/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/touch_sensor/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/twai/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/uart/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/usb_serial_jtag/include -I/Users/souhir/esp-idf-v5.2.2/components/driver/touch_sensor/esp32/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_pm/include -I/Users/souhir/esp-idf-v5.2.2/components/mbedtls/port/include -I/Users/souhir/esp-idf-v5.2.2/components/mbedtls/mbedtls/include -I/Users/souhir/esp-idf-v5.2.2/components/mbedtls/mbedtls/library -I/Users/souhir/esp-idf-v5.2.2/components/mbedtls/esp_crt_bundle/include -I/Users/souhir/esp-idf-v5.2.2/components/mbedtls/mbedtls/3rdparty/everest/include -I/Users/souhir/esp-idf-v5.2.2/components/mbedtls/mbedtls/3rdparty/p256-m -I/Users/souhir/esp-idf-v5.2.2/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/Users/souhir/esp-idf-v5.2.2/components/esp_bootloader_format/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_app_format/include -I/Users/souhir/esp-idf-v5.2.2/components/bootloader_support/include -I/Users/souhir/esp-idf-v5.2.2/components/bootloader_support/bootloader_flash/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_partition/include -I/Users/souhir/esp-idf-v5.2.2/components/app_update/include -I/Users/souhir/esp-idf-v5.2.2/components/spi_flash/include -I/Users/souhir/esp-idf-v5.2.2/components/pthread/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_timer/include -I/Users/souhir/esp-idf-v5.2.2/components/app_trace/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_event/include -I/Users/souhir/esp-idf-v5.2.2/components/nvs_flash/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_phy/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_phy/esp32/include -I/Users/souhir/esp-idf-v5.2.2/components/vfs/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_netif/include -I/Users/souhir/esp-idf-v5.2.2/components/wpa_supplicant/include -I/Users/souhir/esp-idf-v5.2.2/components/wpa_supplicant/port/include -I/Users/souhir/esp-idf-v5.2.2/components/wpa_supplicant/esp_supplicant/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_coex/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_wifi/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_wifi/wifi_apps/include -I/Users/souhir/esp-idf-v5.2.2/components/unity/include -I/Users/souhir/esp-idf-v5.2.2/components/unity/unity/src -I/Users/souhir/esp-idf-v5.2.2/components/cmock/CMock/src -I/Users/souhir/esp-idf-v5.2.2/components/console -I/Users/souhir/esp-idf-v5.2.2/components/http_parser -I/Users/souhir/esp-idf-v5.2.2/components/esp-tls -I/Users/souhir/esp-idf-v5.2.2/components/esp-tls/esp-tls-crypto -I/Users/souhir/esp-idf-v5.2.2/components/esp_adc/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_adc/interface -I/Users/souhir/esp-idf-v5.2.2/components/esp_adc/esp32/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_adc/deprecated/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_eth/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_gdbstub/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_hid/include -I/Users/souhir/esp-idf-v5.2.2/components/tcp_transport/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_http_client/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_http_server/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_https_ota/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_psram/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_lcd/include -I/Users/souhir/esp-idf-v5.2.2/components/esp_lcd/interface -I/Users/souhir/esp-idf-v5.2.2/components/protobuf-c/protobuf-c -I/Users/souhir/esp-idf-v5.2.2/components/protocomm/include/common -I/Users/souhir/esp-idf-v5.2.2/components/protocomm/include/security -I/Users/souhir/esp-idf-v5.2.2/components/protocomm/include/transports -I/Users/souhir/esp-idf-v5.2.2/components/protocomm/include/crypto/srp6a -I/Users/souhir/esp-idf-v5.2.2/components/protocomm/proto-c -I/Users/souhir/esp-idf-v5.2.2/components/esp_local_ctrl/include -I/Users/souhir/esp-idf-v5.2.2/components/espcoredump/include -I/Users/souhir/esp-idf-v5.2.2/components/espcoredump/include/port/xtensa -I/Users/souhir/esp-idf-v5.2.2/components/wear_levelling/include -I/Users/souhir/esp-idf-v5.2.2/components/sdmmc/include -I/Users/souhir/esp-idf-v5.2.2/components/fatfs/diskio -I/Users/souhir/esp-idf-v5.2.2/components/fatfs/src -I/Users/souhir/esp-idf-v5.2.2/components/fatfs/vfs -I/Users/souhir/esp-idf-v5.2.2/components/idf_test/include -I/Users/souhir/esp-idf-v5.2.2/components/idf_test/include/esp32 -I/Users/souhir/esp-idf-v5.2.2/components/ieee802154/include -I/Users/souhir/esp-idf-v5.2.2/components/json/cJSON -I/Users/souhir/esp-idf-v5.2.2/components/mqtt/esp-mqtt/include -I/Users/souhir/esp-idf-v5.2.2/components/nvs_sec_provider/include -I/Users/souhir/esp-idf-v5.2.2/components/perfmon/include -I/Users/souhir/esp-idf-v5.2.2/components/spiffs/include -I/Users/souhir/esp-idf-v5.2.2/components/wifi_provisioning/include -I/Users/souhir/CODES/EVCS_Firmware/components/port/inc -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/certs -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/c-utility/inc -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/c-utility/deps/azure-macro-utils-c/inc -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/c-utility/deps/umock-c/inc -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/c-utility/pal/inc -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/c-utility/pal/freertos -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/c-utility/pal/generic -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/iothub_client/inc -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/serializer/inc -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/umqtt/inc -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/umqtt/inc/azure_umqtt_c -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/deps/parson -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/provisioning_client/inc -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/provisioning_client/adapters -I/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/provisioning_client/deps/utpm/inc -I/Users/souhir/CODES/EVCS_Firmware/components/rc522/include -I/Users/souhir/CODES/EVCS_Firmware/components/lvgl -I/Users/souhir/CODES/EVCS_Firmware/components/lvgl/src -I/Users/souhir/CODES/EVCS_Firmware/components/lvgl_esp32_drivers -I/Users/souhir/CODES/EVCS_Firmware/components/lvgl_esp32_drivers/lvgl_tft -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/Users/souhir/CODES/EVCS_Firmware=. -fmacro-prefix-map=/Users/souhir/esp-idf-v5.2.2=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/sensors.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/sensors.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/sensors.c.obj -c /Users/souhir/CODES/EVCS_Firmware/main/sensors.c
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:8,
+                 from /Users/souhir/CODES/EVCS_Firmware/main/sensors.c:1:
+/Users/souhir/esp-idf-v5.2.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:12:
+/Users/souhir/esp-idf-v5.2.2/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.h:38:1: warning: parameter names (without types) in function declaration
+   38 | extern void set_cp_pwm_duty(duty_cycle_res);
+      | ^~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c: In function 'read_Current':
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c:91:11: warning: unused variable 'sensorOffset' [-Wunused-variable]
+   91 |     float sensorOffset = 2.15;
+      |           ^~~~~~~~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c:86:7: warning: unused variable 'R3' [-Wunused-variable]
+   86 | float R3 = 22;
+      |       ^~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c:85:7: warning: unused variable 'R2' [-Wunused-variable]
+   85 | float R2 = 330;
+      |       ^~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c:84:11: warning: unused variable 'R1' [-Wunused-variable]
+   84 |     float R1 = 680;
+      |           ^~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c: In function 'configure_adc':
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c:134:5: error: implicit declaration of function 'gpio_pad_select_gpio'; did you mean 'esp_rom_gpio_pad_select_gpio'? [-Werror=implicit-function-declaration]
+  134 |     gpio_pad_select_gpio(DC_RELAY_CONTACTOR);
+      |     ^~~~~~~~~~~~~~~~~~~~
+      |     esp_rom_gpio_pad_select_gpio
+cc1: some warnings being treated as errors
+[10/223] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/src/agenttime_esp.c.obj
+[11/223] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/pal/freertos/lock.c.obj
+[12/223] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lcd_display.c.obj
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/lcd_display.h:22,
+                 from /Users/souhir/CODES/EVCS_Firmware/main/lcd_display.c:3:
+/Users/souhir/esp-idf-v5.2.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:12,
+                 from /Users/souhir/CODES/EVCS_Firmware/main/lcd_display.h:23:
+/Users/souhir/esp-idf-v5.2.2/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.h:38:1: warning: parameter names (without types) in function declaration
+   38 | extern void set_cp_pwm_duty(duty_cycle_res);
+      | ^~~~~~
+[13/223] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/src/platform_esp.c.obj
+[14/223] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/pal/socket_async.c.obj
+[15/223] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/src/tlsio_esp_tls.c.obj
+[16/223] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/pal/freertos/tickcounter.c.obj
+[17/223] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/charging.c.obj
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:8,
+                 from /Users/souhir/CODES/EVCS_Firmware/main/charging.h:4,
+                 from /Users/souhir/CODES/EVCS_Firmware/main/charging.c:2:
+/Users/souhir/esp-idf-v5.2.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:12:
+/Users/souhir/esp-idf-v5.2.2/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.h:38:1: warning: parameter names (without types) in function declaration
+   38 | extern void set_cp_pwm_duty(duty_cycle_res);
+      | ^~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/charging.h:5:
+/Users/souhir/CODES/EVCS_Firmware/main/iothub_receive.h:19:41: warning: 'receive_msg_callback' declared 'static' but never defined [-Wunused-function]
+   19 | static IOTHUBMESSAGE_DISPOSITION_RESULT receive_msg_callback(IOTHUB_MESSAGE_HANDLE message, void* user_context);
+      |                                         ^~~~~~~~~~~~~~~~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/charging.h:6:
+/Users/souhir/CODES/EVCS_Firmware/main/iothub_send.h:17:13: warning: 'send_confirm_callback' declared 'static' but never defined [-Wunused-function]
+   17 | static void send_confirm_callback(IOTHUB_CLIENT_CONFIRMATION_RESULT result, void* userContextCallback);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+[18/223] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:8,
+                 from /Users/souhir/CODES/EVCS_Firmware/main/main.c:9:
+/Users/souhir/esp-idf-v5.2.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:12:
+/Users/souhir/esp-idf-v5.2.2/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.h:38:1: warning: parameter names (without types) in function declaration
+   38 | extern void set_cp_pwm_duty(duty_cycle_res);
+      | ^~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/main.c:5:
+/Users/souhir/CODES/EVCS_Firmware/main/iothub_receive.h:19:41: warning: 'receive_msg_callback' declared 'static' but never defined [-Wunused-function]
+   19 | static IOTHUBMESSAGE_DISPOSITION_RESULT receive_msg_callback(IOTHUB_MESSAGE_HANDLE message, void* user_context);
+      |                                         ^~~~~~~~~~~~~~~~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/main.c:6:
+/Users/souhir/CODES/EVCS_Firmware/main/iothub_send.h:17:13: warning: 'send_confirm_callback' declared 'static' but never defined [-Wunused-function]
+   17 | static void send_confirm_callback(IOTHUB_CLIENT_CONFIRMATION_RESULT result, void* userContextCallback);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/main.c:22:13: warning: 'g_continueRunning1' defined but not used [-Wunused-variable]
+   22 | static bool g_continueRunning1 = true;
+      |             ^~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

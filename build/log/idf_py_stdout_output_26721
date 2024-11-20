@@ -1,0 +1,109 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/souhir/CODES/EVCS_Firmware/build/bootloader/esp-idf/esptool_py && /Users/souhir/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/souhir/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/souhir/CODES/EVCS_Firmware/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/charging.c.obj
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:8,
+                 from /Users/souhir/CODES/EVCS_Firmware/main/charging.h:4,
+                 from /Users/souhir/CODES/EVCS_Firmware/main/charging.c:2:
+/Users/souhir/esp-idf-v5.2.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:12:
+/Users/souhir/esp-idf-v5.2.2/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.h:38:1: warning: parameter names (without types) in function declaration
+   38 | extern void set_cp_pwm_duty(duty_cycle_res);
+      | ^~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/charging.h:5:
+/Users/souhir/CODES/EVCS_Firmware/main/iothub_receive.h:19:41: warning: 'receive_msg_callback' declared 'static' but never defined [-Wunused-function]
+   19 | static IOTHUBMESSAGE_DISPOSITION_RESULT receive_msg_callback(IOTHUB_MESSAGE_HANDLE message, void* user_context);
+      |                                         ^~~~~~~~~~~~~~~~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/charging.h:6:
+/Users/souhir/CODES/EVCS_Firmware/main/iothub_send.h:17:13: warning: 'send_confirm_callback' declared 'static' but never defined [-Wunused-function]
+   17 | static void send_confirm_callback(IOTHUB_CLIENT_CONFIRMATION_RESULT result, void* userContextCallback);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable mqtt_beebotte.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/souhir/CODES/EVCS_Firmware/build/mqtt_beebotte.bin
+[9/10] cd /Users/souhir/CODES/EVCS_Firmware/build/esp-idf/esptool_py && /Users/souhir/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/souhir/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/souhir/CODES/EVCS_Firmware/build/partition_table/partition-table.bin /Users/souhir/CODES/EVCS_Firmware/build/mqtt_beebotte.bin
+mqtt_beebotte.bin binary size 0xf8700 bytes. Smallest app partition is 0x200000 bytes. 0x107900 bytes (51%) free.
+[9/10] cd /Users/souhir/esp-idf-v5.2.2/components/esptool_py && /opt/homebrew/Cellar/cmake/3.29.2/bin/cmake -D IDF_PATH=/Users/souhir/esp-idf-v5.2.2 -D "SERIAL_TOOL=/Users/souhir/.espressif/python_env/idf5.2_py3.12_env/bin/python;;/Users/souhir/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/souhir/CODES/EVCS_Firmware/build -P /Users/souhir/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/tty.usbserial-0001 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 mqtt_beebotte.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/tty.usbserial-0001
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 7c:87:ce:2d:7c:60
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00108fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16349...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16349 compressed) at 0x00001000 in 0.9 seconds (effective 244.3 kbit/s)...
+Hash of data verified.
+Compressed 1017600 bytes to 634511...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d167... (5 %)
+Writing at 0x0002a8e5... (7 %)
+Writing at 0x0003109a... (10 %)
+Writing at 0x000362a8... (12 %)
+Writing at 0x000406cc... (15 %)
+Writing at 0x00046445... (17 %)
+Writing at 0x0004c24b... (20 %)
+Writing at 0x00052567... (23 %)
+Writing at 0x000587c2... (25 %)
+Writing at 0x0005e645... (28 %)
+Writing at 0x000642fd... (30 %)
+Writing at 0x00069fb6... (33 %)
+Writing at 0x0006fa69... (35 %)
+Writing at 0x000756b6... (38 %)
+Writing at 0x0007b3b8... (41 %)
+Writing at 0x00080d96... (43 %)
+Writing at 0x00086bd2... (46 %)
+Writing at 0x0008d06f... (48 %)
+Writing at 0x00092d85... (51 %)
+Writing at 0x0009881f... (53 %)
+Writing at 0x0009d917... (56 %)
+Writing at 0x000a2ed6... (58 %)
+Writing at 0x000a832b... (61 %)
+Writing at 0x000ad820... (64 %)
+Writing at 0x000b2e61... (66 %)
+Writing at 0x000b8657... (69 %)
+Writing at 0x000be31a... (71 %)
+Writing at 0x000c3c5f... (74 %)
+Writing at 0x000c99b5... (76 %)
+Writing at 0x000cf3f5... (79 %)
+Writing at 0x000d4d2d... (82 %)
+Writing at 0x000db161... (84 %)
+Writing at 0x000e5991... (87 %)
+Writing at 0x000ebd16... (89 %)
+Writing at 0x000f3123... (92 %)
+Writing at 0x000f8b4d... (94 %)
+Writing at 0x000fed2e... (97 %)
+Writing at 0x00104530... (100 %)
+Wrote 1017600 bytes (634511 compressed) at 0x00010000 in 16.8 seconds (effective 485.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00008000 in 0.1 seconds (effective 184.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

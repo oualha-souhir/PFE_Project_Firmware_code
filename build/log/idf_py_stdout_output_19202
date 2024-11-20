@@ -1,0 +1,255 @@
+[1/208] Performing build step for 'bootloader'
+[1/1] cd /Users/souhir/CODES/EVCS_Firmware/build/bootloader/esp-idf/esptool_py && /Users/souhir/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/souhir/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/souhir/CODES/EVCS_Firmware/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/208] No install step for 'bootloader'
+[3/208] Completed 'bootloader'
+[4/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/doublylinkedlist.c.obj
+[5/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/consolelogger.c.obj
+[6/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/xlogging.c.obj
+[7/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/gb_stdio.c.obj
+[8/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/gb_time.c.obj
+[9/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/singlylinkedlist.c.obj
+[10/208] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/sensors.c.obj
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:8,
+                 from /Users/souhir/CODES/EVCS_Firmware/main/sensors.c:1:
+/Users/souhir/esp-idf-v5.2.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/souhir/CODES/EVCS_Firmware/main/sensors.h:12:
+/Users/souhir/esp-idf-v5.2.2/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.h:38:1: warning: parameter names (without types) in function declaration
+   38 | extern void set_cp_pwm_duty(duty_cycle_res);
+      | ^~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c: In function 'read_Current':
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c:91:11: warning: unused variable 'sensorOffset' [-Wunused-variable]
+   91 |     float sensorOffset = 2.15;
+      |           ^~~~~~~~~~~~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c:86:7: warning: unused variable 'R3' [-Wunused-variable]
+   86 | float R3 = 22;
+      |       ^~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c:85:7: warning: unused variable 'R2' [-Wunused-variable]
+   85 | float R2 = 330;
+      |       ^~
+/Users/souhir/CODES/EVCS_Firmware/main/sensors.c:84:11: warning: unused variable 'R1' [-Wunused-variable]
+   84 |     float R1 = 680;
+      |           ^~
+[11/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/hmac.c.obj
+[12/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/constbuffer.c.obj
+[13/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/constmap.c.obj
+[14/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/pal/tlsio_options.c.obj
+[15/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/crt_abstractions.c.obj
+[16/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/buffer.c.obj
+[17/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/hmacsha256.c.obj
+[18/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/gballoc.c.obj
+[19/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/sha224.c.obj
+[20/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/sha1.c.obj
+[21/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/optionhandler.c.obj
+[22/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/httpapiexsas.c.obj
+[23/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/sha384-512.c.obj
+[24/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/usha.c.obj
+[25/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/httpheaders.c.obj
+[26/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/sastoken.c.obj
+[27/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/httpapiex.c.obj
+[28/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/string_tokenizer.c.obj
+[29/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/map.c.obj
+[30/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/urlencode.c.obj
+[31/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/xio.c.obj
+[32/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/strings.c.obj
+[33/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/vector.c.obj
+[34/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/azure_base64.c.obj
+[35/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothub_client_authorization.c.obj
+[36/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothub_client_diagnostic.c.obj
+[37/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothub_client_ll.c.obj
+[38/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothub_device_client_ll.c.obj
+[39/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/version.c.obj
+[40/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothubtransportmqtt.c.obj
+[41/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothub_client_retry_control.c.obj
+[42/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothub_transport_ll_private.c.obj
+[43/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothub_message.c.obj
+[44/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothubtransport.c.obj
+[45/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/umqtt/src/mqtt_message.c.obj
+[46/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothub_client_ll_uploadtoblob.c.obj
+[47/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/umqtt/src/mqtt_codec.c.obj
+[48/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/umqtt/src/mqtt_client.c.obj
+In file included from /Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/umqtt/src/mqtt_client.c:17:
+/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/umqtt/src/mqtt_client.c: In function 'byteutil_readUTF':
+/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/safe_math.h:11:47: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   11 | #define safe_add_size_t(a, b) ((((size_t)(a)) < ((size_t)(SIZE_MAX - ((size_t)(b))))) ? ((size_t)(a) + (size_t)(b)) : SIZE_MAX)
+      |                                               ^
+/Users/souhir/CODES/EVCS_Firmware/azure-iot-sdk-c/umqtt/src/mqtt_client.c:173:30: note: in expansion of macro 'safe_add_size_t'
+  173 |         size_t malloc_size = safe_add_size_t((size_t)stringLen, 1);
+      |                              ^~~~~~~~~~~~~~~
+[49/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/dataserializer.c.obj
+[50/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/datamarshaller.c.obj
+[51/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/datapublisher.c.obj
+[52/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/commanddecoder.c.obj
+[53/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/jsondecoder.c.obj
+[54/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/jsonencoder.c.obj
+[55/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothub_client_core_ll.c.obj
+[56/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/methodreturn.c.obj
+[57/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/codefirst.c.obj
+[58/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/iotdevice.c.obj
+[59/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/deps/parson/parson.c.obj
+[60/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/multitree.c.obj
+[61/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/src/prov_device_client.c.obj
+[62/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/src/prov_transport_mqtt_client.c.obj
+[63/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/src/prov_security_factory.c.obj
+[64/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/schemaserializer.c.obj
+[65/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/schemalib.c.obj
+[66/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/adapters/hsm_client_data.c.obj
+[67/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/src/iothub_security_factory.c.obj
+[68/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothubtransport_mqtt_common.c.obj
+[69/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/agenttypesystem.c.obj
+[70/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/src/prov_transport_mqtt_common.c.obj
+[71/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/deps/utpm/src/Memory.c.obj
+[72/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/src/prov_auth_client.c.obj
+[73/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/iothub_client/src/iothub.c.obj
+[74/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/adapters/hsm_client_tpm.c.obj
+[75/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/src/prov_device_ll_client.c.obj
+[76/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/deps/utpm/src/tpm_comm_emulator.c.obj
+[77/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/deps/utpm/src/tpm_socket_comm.c.obj
+[78/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_core/lv_disp.c.obj
+[79/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/serializer/src/schema.c.obj
+[80/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_core/lv_group.c.obj
+[81/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/azure_base32.c.obj
+[82/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/c-utility/src/http_proxy_io.c.obj
+[83/208] Building C object esp-idf/rc522/CMakeFiles/__idf_rc522.dir/src/rc522.c.obj
+[84/208] Linking C static library esp-idf/rc522/librc522.a
+[85/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_draw_arc.c.obj
+[86/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_core/lv_refr.c.obj
+[87/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_core/lv_indev.c.obj
+[88/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/deps/utpm/src/tpm_codec.c.obj
+[89/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_draw_img.c.obj
+[90/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_draw_triangle.c.obj
+[91/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_draw_label.c.obj
+[92/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_draw_line.c.obj
+[93/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_core/lv_style.c.obj
+[94/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_draw_blend.c.obj
+[95/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_img_cache.c.obj
+[96/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font.c.obj
+[97/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_dejavu_16_persian_hebrew.c.obj
+[98/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_img_buf.c.obj
+[99/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_10.c.obj
+[100/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_fmt_txt.c.obj
+[101/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_img_decoder.c.obj
+[102/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_draw_mask.c.obj
+[103/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_12.c.obj
+[104/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_12_subpx.c.obj
+[105/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_loader.c.obj
+[106/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_20.c.obj
+[107/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_18.c.obj
+[108/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_14.c.obj
+[109/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_16.c.obj
+[110/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_22.c.obj
+[111/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_24.c.obj
+[112/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_draw/lv_draw_rect.c.obj
+[113/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_26.c.obj
+[114/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_28_compressed.c.obj
+[115/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_32.c.obj
+[116/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_28.c.obj
+[117/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_30.c.obj
+[118/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_34.c.obj
+[119/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_36.c.obj
+[120/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_38.c.obj
+[121/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_40.c.obj
+[122/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_42.c.obj
+[123/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_44.c.obj
+[124/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_8.c.obj
+[125/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_48.c.obj
+[126/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_montserrat_46.c.obj
+[127/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_gpu/lv_gpu_nxp_pxp_osa.c.obj
+[128/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_gpu/lv_gpu_nxp_pxp.c.obj
+[129/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_gpu/lv_gpu_nxp_vglite.c.obj
+[130/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_unscii_8.c.obj
+[131/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_hal/lv_hal_tick.c.obj
+[132/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_unscii_16.c.obj
+[133/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_font/lv_font_simsun_16_cjk.c.obj
+[134/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_async.c.obj
+[135/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_gpu/lv_gpu_stm32_dma2d.c.obj
+[136/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_bidi.c.obj
+[137/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_hal/lv_hal_indev.c.obj
+[138/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_color.c.obj
+[139/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_debug.c.obj
+[140/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_hal/lv_hal_disp.c.obj
+[141/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_anim.c.obj
+[142/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_log.c.obj
+[143/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_gc.c.obj
+[144/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_area.c.obj
+[145/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_templ.c.obj
+[146/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_ll.c.obj
+[147/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_math.c.obj
+[148/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_fs.c.obj
+[149/208] Building C object esp-idf/port/CMakeFiles/__idf_port.dir/__/__/azure-iot-sdk-c/provisioning_client/deps/utpm/src/Marshal.c.obj
+[150/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_txt_ap.c.obj
+[151/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_task.c.obj
+[152/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_utils.c.obj
+[153/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_mem.c.obj
+[154/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_themes/lv_theme_empty.c.obj
+[155/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_printf.c.obj
+[156/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_misc/lv_txt.c.obj
+[157/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_themes/lv_theme.c.obj
+[158/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_core/lv_obj.c.obj
+[159/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_themes/lv_theme_template.c.obj
+[160/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_btn.c.obj
+[161/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_bar.c.obj
+[162/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_checkbox.c.obj
+[163/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_themes/lv_theme_mono.c.obj
+[164/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_arc.c.obj
+[165/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_calendar.c.obj
+[166/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_cont.c.obj
+[167/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_btnmatrix.c.obj
+[168/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_canvas.c.obj
+[169/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_gauge.c.obj
+[170/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_cpicker.c.obj
+[171/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_imgbtn.c.obj
+[172/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_keyboard.c.obj
+[173/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_img.c.obj
+[174/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_chart.c.obj
+[175/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_led.c.obj
+[176/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_line.c.obj
+[177/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_dropdown.c.obj
+[178/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_objx_templ.c.obj
+[179/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_linemeter.c.obj
+[180/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_objmask.c.obj
+[181/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_label.c.obj
+[182/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_msgbox.c.obj
+[183/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_spinner.c.obj
+[184/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_list.c.obj
+[185/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_slider.c.obj
+[186/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_spinbox.c.obj
+[187/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_switch.c.obj
+[188/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_roller.c.obj
+[189/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_themes/lv_theme_material.c.obj
+[190/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_tileview.c.obj
+[191/208] Building C object esp-idf/lvgl_esp32_drivers/CMakeFiles/__idf_lvgl_esp32_drivers.dir/lvgl_tft/disp_driver.c.obj
+[192/208] Building C object esp-idf/lvgl_esp32_drivers/CMakeFiles/__idf_lvgl_esp32_drivers.dir/lvgl_helpers.c.obj
+[193/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_page.c.obj
+[194/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_win.c.obj
+[195/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_tabview.c.obj
+[196/208] Building C object esp-idf/lvgl_esp32_drivers/CMakeFiles/__idf_lvgl_esp32_drivers.dir/lvgl_tft/ili9341.c.obj
+[197/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_table.c.obj
+[198/208] Building C object esp-idf/lvgl_esp32_drivers/CMakeFiles/__idf_lvgl_esp32_drivers.dir/lvgl_tft/disp_spi.c.obj
+/Users/souhir/CODES/EVCS_Firmware/components/lvgl_esp32_drivers/lvgl_tft/disp_spi.c:301:1: warning: ignoring attribute 'section (".iram1.1")' because it conflicts with previous 'section (".iram1.0")' [-Wattributes]
+  301 | {
+      | ^
+/Users/souhir/CODES/EVCS_Firmware/components/lvgl_esp32_drivers/lvgl_tft/disp_spi.c:88:23: note: previous declaration here
+   88 | static void IRAM_ATTR spi_ready (spi_transaction_t *trans);
+      |                       ^~~~~~~~~
+[199/208] Linking C static library esp-idf/lvgl_esp32_drivers/liblvgl_esp32_drivers.a
+[200/208] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/src/lv_widgets/lv_textarea.c.obj
+[201/208] Linking C static library esp-idf/lvgl/liblvgl.a
+[202/208] Linking C static library esp-idf/port/libport.a
+[203/208] Linking C static library esp-idf/main/libmain.a
+[204/208] Generating ld/sections.ld
+[205/208] Building C object CMakeFiles/mqtt_beebotte.elf.dir/project_elf_src_esp32.c.obj
+[206/208] Linking CXX executable mqtt_beebotte.elf
+[207/208] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/souhir/CODES/EVCS_Firmware/build/mqtt_beebotte.bin
+[208/208] cd /Users/souhir/CODES/EVCS_Firmware/build/esp-idf/esptool_py && /Users/souhir/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/souhir/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/souhir/CODES/EVCS_Firmware/build/partition_table/partition-table.bin /Users/souhir/CODES/EVCS_Firmware/build/mqtt_beebotte.bin
+mqtt_beebotte.bin binary size 0xf8700 bytes. Smallest app partition is 0x200000 bytes. 0x107900 bytes (51%) free.

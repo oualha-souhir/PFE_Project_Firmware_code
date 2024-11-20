@@ -1,0 +1,33 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.adapterTargetName": "esp32",
+  "idf.customExtraPaths": "/Users/souhir/.espressif/tools/xtensa-esp-elf-gdb/12.1_20231023/xtensa-esp-elf-gdb/bin:/Users/souhir/.espressif/tools/riscv32-esp-elf-gdb/12.1_20231023/riscv32-esp-elf-gdb/bin:/Users/souhir/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin:/Users/souhir/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin:/Users/souhir/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/Users/souhir/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230921/openocd-esp32/bin:/Users/souhir/.espressif/tools/esp-rom-elfs/20240305",
+  "idf.customExtraVars": {
+    "OPENOCD_SCRIPTS": "/Users/souhir/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230921/openocd-esp32/share/openocd/scripts",
+    "ESP_ROM_ELF_DIR": "/Users/souhir/.espressif/tools/esp-rom-elfs/20240305/"
+  },
+  "idf.espIdfPath": "/Users/souhir/esp-idf",
+  "idf.openOcdConfigs": [
+    "interface/ftdi/esp32_devkitj_v1.cfg",
+    "target/esp32.cfg"
+  ],
+  "idf.port": "/dev/cu.wlan-debug",
+  "idf.pythonBinPath": "/Users/souhir/.espressif/python_env/idf5.3_py3.12_env/bin/python",
+  "idf.toolsPath": "/Users/souhir/.espressif",
+  "files.associations": {
+    "protocol_examples_common.h": "c",
+    "esp_wifi.h": "c",
+    "iothub_message.h": "c",
+    "platform.h": "c",
+    "iothubtransportmqtt.h": "c",
+    "iothub_device_client_ll.h": "c",
+    "iothub_receive.h": "c",
+    "esp_event.h": "c",
+    "esp_log.h": "c",
+    "freertos.h": "c",
+    "rc522_handler.h": "c",
+    "sensors.h": "c",
+    "lvgl_helpers.h": "c",
+    "lvgl.h": "c"
+  }
+}
