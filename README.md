@@ -21,8 +21,13 @@ Implements tasks for sending/receiving data and controlling operations concurren
   LCD Display
   Reliable internet access
 - Software:
-ESP-IDF (v5.2.2)
-Azure IoT Hub credentials
+  ESP-IDF (v5.2.2)
+  Microsoft Azure Account
+  Azure IoT Hub credentials
+  Azure Function
+  Azure Stream Analytics
+  Web Application( 
+  
 
 **Environment Setup:**
 Install ESP-IDF and configure the development environment.
