@@ -26,7 +26,7 @@ Implements tasks for sending/receiving data and controlling operations concurren
   Azure IoT Hub credentials
   Azure Function
   Azure Stream Analytics
-  Web Application( 
+  Web Application( https://github.com/oualha-souhir/PFE_Project_Web_App )
   
 
 **Environment Setup:**
